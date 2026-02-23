@@ -58,11 +58,11 @@
             </div>
 
             <div class="btn pt-6 pb-4 flex gap-2">
-                <button id="all-tab"
+                <button onclick="toggleStyle('all-filter-btn')" id="all-filter-btn"
                     class="px-8 py-2.5 bg-[#3B82F6] rounded-sm text-[12px] text-white font-semiabold cursor-pointer">All</button>
-                <button
+                <button onclick="toggleStyle('interview-filter-btn')" id="interview-filter-btn"
                     class="px-3.5 py-2.5 bg-[#FFFFFF] border border-[#F1F2F4] rounded-sm text-[12px] text-[#64748B] font-medium cursor-pointer">INterview</button>
-                <button
+                <button onclick="toggleStyle('rejected-filter-btn')" id="rejected-filter-btn"
                     class="px-3.5 py-2.5 bg-[#FFFFFF] border border-[#F1F2F4] rounded-sm text-[12px] text-[#64748B] font-medium cursor-pointer">Rejected</button>
             </div>
 
@@ -336,7 +336,7 @@
                                 class="px-3 py-2 text-sm text-[#EF4444] font-semibold border border-[#EF4444] rounded-sm hover:bg-[#EF4444] hover:text-white transition-all active:scale-[1.1] cursor-pointer">REJECTED</button>
                         </div>
                     </div>
-                    
+
                     <div>
                         <p class=" p-2.5 border border-[#64748B] rounded-full text-[#64748B]"><i
                                 class="fa-regular fa-trash-can"></i></p>
