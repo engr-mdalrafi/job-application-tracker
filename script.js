@@ -150,7 +150,7 @@ function renderInterview() {
         console.log(interview);
 
         let div = document.createElement('div');
-        div.className = 'card flex justify-between bg-white border border-white p-6 rounded-lg'
+        div.className = 'card flex justify-between bg-white border border-white p-6 rounded-lg mb-6'
         div.innerHTML = `
          <div class="space-y-6">
                     <!-- part 1 -->
@@ -189,7 +189,7 @@ function renderRejected() {
     for (let rejected of rejectedList) {
 
         let div = document.createElement('div');
-        div.className = 'card flex justify-between bg-white border border-white p-6 rounded-lg'
+        div.className = 'card flex justify-between bg-white border border-white p-6 rounded-lg mb-6'
         div.innerHTML = `
          <div class="space-y-6">
                     <!-- part 1 -->
@@ -216,6 +216,7 @@ function renderRejected() {
                 <div>
                     <button class="btn-delete border border-[#64748B] hover:border-[#EF4444] px-2 py-2 rounded-full cursor-pointer"><span class="text-[#64748B] hover:text-[#EF4444]"><i class="fa-regular fa-trash-can"></i></span></button>
                 </div>
+                
         `
         filterSection.appendChild(div);
     }
